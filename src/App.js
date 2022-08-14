@@ -6,7 +6,7 @@ import TextForm from './components/TextForm';
 
 function App() {
   const [alert,setAlert]=useState(null);
-  const [mode,setMode]=useState('light');
+  const [mode,setMode]=useState('light');//whether the dark mode is enabled or not
   const showAlert=(message,type)=>{
     setAlert({
       msg:message,
@@ -32,9 +32,9 @@ function App() {
 
   return (
     < >
-<Navbar title="TEXT CONVERTER" aboutText="About TextUtils" />
-{/* <TextForm heading="Result"/> */}
-<About/>
+<Navbar title="TEXT CONVERTER" aboutText="About TextUtils" mode={mode}  toggleMode={toggleMode}/>
+<TextForm heading="Result" mode={mode}/>
+{/* <About/> */}
     </>
   );
 }
