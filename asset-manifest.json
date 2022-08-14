@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/changing-title-dynamically/static/css/main.e6c13ad2.css",
+    "main.js": "/changing-title-dynamically/static/js/main.63cea024.js",
+    "static/js/787.f8273878.chunk.js": "/changing-title-dynamically/static/js/787.f8273878.chunk.js",
+    "index.html": "/changing-title-dynamically/index.html",
+    "main.e6c13ad2.css.map": "/changing-title-dynamically/static/css/main.e6c13ad2.css.map",
+    "main.63cea024.js.map": "/changing-title-dynamically/static/js/main.63cea024.js.map",
+    "787.f8273878.chunk.js.map": "/changing-title-dynamically/static/js/787.f8273878.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.63cea024.js"
+  ]
+}
