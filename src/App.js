@@ -1,6 +1,7 @@
 import React,{useState} from 'react'
 import './App.css';
 import About from './components/About';
+import Alert from './components/Alert';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
 
@@ -14,7 +15,7 @@ function App() {
     })
     setTimeout(()=>{
       setAlert(null)
-    },1500);
+    },2000);
   }
   const toggleMode=()=>{
     if(mode==='light'){
@@ -31,9 +32,14 @@ function App() {
   }
 
   return (
-    < >
+    
+ < >
+    
 <Navbar title="TEXT CONVERTER" aboutText="About TextUtils" mode={mode}  toggleMode={toggleMode}/>
-<TextForm heading="Result" mode={mode}/>
+<Alert alert={alert}/>
+<div className='container my-3'>
+<TextForm showAlert={showAlert} heading="Result" mode={mode}/>
+</div> 
 {/* <About/> */}
     </>
   );
